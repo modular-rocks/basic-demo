@@ -13,7 +13,7 @@ export default function(props) {
   return (
     <div className='container'>
       <h1>Scope AAA</h1>
-      <input value={value} onChange={updateValue} />
+      <input value={value} onChange={updateValue} placeholder='Input a number' />
       <button onClick={compute}> compute </button>
 
       <p className='result'>{result}</p>
