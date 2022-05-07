@@ -27,7 +27,8 @@ module.exports = {
   devServer: {
     compress: true,
     port: 9000,
-    static: "./dist"
+    static: "./dist",
+    historyApiFallback: true
   },
   devtool: "source-map",
   module: {

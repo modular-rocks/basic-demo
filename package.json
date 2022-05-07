@@ -4,7 +4,7 @@
   "description": "Modular Rocks Webpack basic demo",
   "scripts": {
     "dev": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "≈ --open"
   },
   "devDependencies": {
     "@webpack-cli/serve": "1.5.2",
