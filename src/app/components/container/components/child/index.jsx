@@ -2,7 +2,7 @@ import React from 'react'
 
 const Children = scope.components.children
 
-export default function(props) {
+export default (props) => {
   const [state, setState] = React.useState({})
   const updateValue = (e) => setState({ ...state, value: e.target.value  })
 

@@ -1,5 +1,6 @@
 export const hello = "hi"
-
-export default (action) => {
+const hi = (action) => {
   return action.num * 3
 }
+
+export default hi

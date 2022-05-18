@@ -13,7 +13,6 @@ let opts = {
 const hook = new ModularRocks.Hook({...opts, path: '/src', app: 'app'})
 
 module.exports = {
-  watch: true,
   mode: 'development',
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
@@ -27,7 +26,7 @@ module.exports = {
   devServer: {
     compress: true,
     port: 9000,
-    static: "./dist",
+    static: "./src",
     historyApiFallback: true
   },
   devtool: "source-map",
@@ -73,10 +72,6 @@ module.exports = {
     hook
   ],
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.sass'],
-    fallback: {
-        "fs": false,
-        "path": require.resolve("path-browserify")
-    },
+    extensions: ['.js', '.jsx', '.css', '.sass']
   }
 }
